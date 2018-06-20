@@ -21,7 +21,7 @@ app.use(asd.urlencoded({
     extended: true
 }));
 
- import cats from './cat_routes.mjs'
+ import cats from './routes/cat_routes.mjs'
  cats(app,[]);
  
 const port = 3000

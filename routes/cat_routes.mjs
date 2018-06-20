@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Cat from './cat_model.mjs';
+import Cat from '../models/cat_model.mjs';
 
 export default function(app,_cats) {
     /* Create */
