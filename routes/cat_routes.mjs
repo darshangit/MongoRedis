@@ -19,6 +19,7 @@ export default function(app,_cats) {
            if(err){
                res.json({info: 'Error during find cats', error: err});
            }
+           console.log('cat')
            res.json({info: 'Cats found successfully', data: cats});
         })
     });
@@ -29,7 +30,9 @@ export default function(app,_cats) {
                res.json({info: 'error during find cat', error: err});
            };
            if(cat){
-               res.json({info: 'Cat found successfully', data: cat})
+               setTimeout(() => {
+                    res.json({info: 'Cat found successfully', data: cat})
+               }, 1);
            }else {
                res.json({info: 'Cat not found'})
            }

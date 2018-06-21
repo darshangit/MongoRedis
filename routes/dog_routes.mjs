@@ -19,7 +19,9 @@ export default function(app,_dogs) {
            if(err){
                res.json({info: 'Error during find dogs', error: err});
            }
+           setTimeout(() => {
             res.json({info: 'dogs found successfully', data: dogs});
+           }, 2000);
         })
     });
 
